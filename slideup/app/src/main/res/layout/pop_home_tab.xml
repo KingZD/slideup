@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tbs_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_dp_15"
+        android:src="@mipmap/ic_tab_close" />
+
+    <TextView
+        android:id="@+id/tv_my"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_dp_30"
+        android:layout_below="@+id/iv_close"
+        android:gravity="start|center"
+        android:paddingEnd="@dimen/dimen_dp_0"
+        android:paddingLeft="@dimen/dimen_dp_15"
+        android:paddingRight="@dimen/dimen_dp_0"
+        android:paddingStart="@dimen/dimen_dp_15"
+        android:text="我的"
+        android:textSize="@dimen/dimen_sp_18" />
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_my"
+        android:layout_below="@+id/iv_close"
+        android:layout_marginLeft="@dimen/dimen_dp_10"
+        android:layout_marginStart="@dimen/dimen_dp_10"
+        android:layout_toEndOf="@+id/tv_my"
+        android:layout_toRightOf="@+id/tv_my"
+        android:text="拖拽排序" />
+
+    <CheckBox
+        android:id="@+id/cb_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/dimen_dp_15"
+        android:layout_marginRight="@dimen/dimen_dp_15"
+        android:background="@drawable/tab_edit"
+        android:button="@null" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/xrFocusList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_my"
+        android:layout_marginTop="@dimen/dimen_dp_10"
+        android:paddingEnd="@dimen/dimen_dp_5"
+        android:paddingLeft="@dimen/dimen_dp_15"
+        android:paddingRight="@dimen/dimen_dp_5"
+        android:paddingStart="@dimen/dimen_dp_15" />
+
+    <TextView
+        android:id="@+id/tv_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_dp_30"
+        android:layout_below="@+id/xrFocusList"
+        android:layout_marginTop="@dimen/dimen_dp_20"
+        android:gravity="start|center"
+        android:paddingEnd="@dimen/dimen_dp_0"
+        android:paddingLeft="@dimen/dimen_dp_15"
+        android:paddingRight="@dimen/dimen_dp_0"
+        android:paddingStart="@dimen/dimen_dp_15"
+        android:text="隐藏"
+        android:textSize="@dimen/dimen_sp_18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_hide"
+        android:layout_below="@+id/xrFocusList"
+        android:layout_marginLeft="@dimen/dimen_dp_10"
+        android:layout_marginStart="@dimen/dimen_dp_10"
+        android:layout_toEndOf="@+id/tv_hide"
+        android:layout_toRightOf="@+id/tv_hide"
+        android:text="添加" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/xrAllList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hide"
+        android:layout_marginTop="@dimen/dimen_dp_10"
+        android:paddingEnd="@dimen/dimen_dp_5"
+        android:paddingLeft="@dimen/dimen_dp_15"
+        android:paddingRight="@dimen/dimen_dp_5"
+        android:paddingStart="@dimen/dimen_dp_15" />
+</RelativeLayout>
+
